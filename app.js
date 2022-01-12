@@ -47,11 +47,11 @@ function rreaddirSync (dir, allFiles = []) {
             }
         } catch (error) {
             console.log('error: ', error);
-        }        
+        }
 
-        // if (i === 2400) {
-        //     break;
-        // }
+        if (i === 10250) {
+            break;
+        }
     }
 
     console.log('unknown: ', unknown[0]);
