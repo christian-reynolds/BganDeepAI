@@ -49,9 +49,9 @@ function rreaddirSync (dir, allFiles = []) {
             console.log('error: ', error);
         }
 
-        if (i === 10250) {
-            break;
-        }
+        // if (i === 10250) {
+        //     break;
+        // }
     }
 
     console.log('unknown: ', unknown[0]);
