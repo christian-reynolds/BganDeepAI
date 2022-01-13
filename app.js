@@ -24,12 +24,10 @@ function rreaddirSync (dir, allFiles = []) {
     let lowestDistance = 100;
 
     // get all the unknown files
-    let __dirname = "./images-unknown";
-    rreaddirSync(__dirname, unknown);
+    rreaddirSync("./images-unknown", unknown);
 
     // create an array of the known files
-    __dirname = "./images-known";
-    rreaddirSync(__dirname, known);
+    rreaddirSync("./images-known", known);
 
     // loop thru the known files to look for a match with the unknown file
     for (let i = 0; i < known.length; i++) {
